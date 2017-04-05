@@ -19,6 +19,7 @@ html, body {
 	flex-direction: column;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	padding-bottom: 50px;
 }
 .main__header {
 	min-height: 100vh;
@@ -158,16 +159,16 @@ font-weight: 700;
 	align-content: center;
 	justify-content: center;
 }
-.gallery__desc, .blog_desc {
+.gallery__desc, .blog_desc, .contact__desc {
 	text-align: center;
 }
-.gallery__desc-title, .blog_desc-title {
+.gallery__desc-title, .blog_desc-title, .contact__desc-title {
 color:  #262626;
 font-size: 90px;
 font-weight: 700;
 margin-top: 100px;
 }
-.gallery__desc-subtitle, .subscribe-desc, .blog__desc-subtitle {
+.gallery__desc-subtitle, .subscribe-desc, .blog__desc-subtitle, .contact__desc-subtitle {
 margin: 27px 0;
 color:  #262626;
 font-size: 17px;
@@ -238,6 +239,7 @@ background-color:  rgba(38, 38, 38, 0);
 margin-right: 30px;
 outline: none;
 }
+
 .submit-btn--subscribe {
 	background-color:  #96b92c;
 	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
@@ -297,4 +299,84 @@ bottom: 30px;
 }
 .btn-more--blog {
 	background-color:  #f72b3b;
+}
+.contact {
+	background: url(../images/contact-bg.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.main-form {
+	width: 500px;
+	position: relative;
+}
+.main-form-input, .main-form-textarea {
+	color: #ffffff;
+	background-color: rgba(0, 196, 196, 0.5);
+	font-size: 15px; 
+	font-weight: 700;
+	border: none;
+	padding: 20px;
+	margin: 5px 0;
+}
+.main-form-input:focus, .main-form-textarea:focus {
+	border-left:5px solid  #355b82;
+	outline: none;
+}
+.main-form-input:focus .main-form-label, .main-form-textarea:focus .main-form-label {
+	opacity: 0;
+	}
+
+.main-form-textarea {
+	height: 250px;
+}
+.main-form-label {
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 300;
+	position: absolute;
+	left: 20px;
+	opacity: 1;
+}
+.main-form-label--name{
+	top: 25px;
+}
+.main-form-label--mail {
+	top: 90px;
+}
+.main-form-label--phone {
+	top: 160px;
+}
+.main-form-label--mesage {
+	top: 230px;
+}
+.main-form-label:focus {
+	display: none;
+}
+.address-block {
+	margin-left: 170px;
+	align-self: flex-start;
+}
+.address-block-header {
+color:  #262626;
+font-size: 17px;
+font-weight: 700;
+line-height: 25px;
+}
+.main-footer {
+	justify-content:space-around;
+	background-color: #262626;
+	padding: 37px 0;
+}
+.copiright-text {
+color:  #b9b9b9;
+font-size: 16px;
+font-weight: 300;
+}
+.author-name {
+color:  #b9b9b9;
+font-size: 15px;
+font-weight: 300;
+}
+.author-name span {
+	color:  #ff2b58;
 }
